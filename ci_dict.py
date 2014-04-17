@@ -18,14 +18,14 @@ def parseDict(cur):
 				if meaning.endswith('/'):
 					meaning = meaning[:-1]
 				# print words[0]+'---'+words[1]+'---'+yin+'---'+meaning
-				cur.execute("INSERT INTO DICT_ZI VALUES(\'"+words[0]+"\',\'"+words[1]+"\',\'"+yin+"\',\'"+meaning+"\')")
+				cur.execute("INSERT INTO DICT_CI VALUES(\'"+words[0]+"\',\'"+words[1]+"\',\'"+yin+"\',\'"+meaning+"\')")
 
 def main():
 	con = lite.connect('jyut_zh.dict')
 	with con:
 	    cur = con.cursor()    
-	    cur.execute("DROP TABLE IF EXISTS DICT_ZI")
-	    cur.execute("CREATE TABLE DICT_ZI(FAN TEXT, JIAN TEXT, YIN TEXT, YI TEXT)")
+	    cur.execute("DROP TABLE IF EXISTS DICT_CI")
+	    cur.execute("CREATE TABLE DICT_CI(FAN TEXT, JIAN TEXT, YIN TEXT, YI TEXT)")
 	    parseDict(cur)
 
 if __name__ == '__main__':
