@@ -1,6 +1,6 @@
 CantoneseDict
 =============
----
+
 A tool for creating a Cantonese dictionary(jyutping).
 ### Usage
 1. Add Characters
@@ -20,9 +20,9 @@ TABLE DICT_CI(FAN TEXT, JIAN TEXT, YIN TEXT, YI TEXT)
 ```
 
 ### Input (Dictionary Source)
-**[JyutEnDict.u8][3]**. jyutping to English dictionary.
-**[gbk_zi][4]**. Chinese Internal Code Specification.
-**[Cantonese Pronunciation List of the Characters for Computers.][5]**
+* **[JyutEnDict.u8][3]**. jyutping to English dictionary.
+* **[gbk_zi][4]**. Chinese Internal Code Specification.
+* **[Cantonese Pronunciation List of the Characters for Computers.][5]**
 
 
 ### Output
