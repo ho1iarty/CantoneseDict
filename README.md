@@ -14,7 +14,7 @@ A tool for creating a Cantonese dictionary(jyutping).
 * [progressbar][2]
 
 ### Data Structure
-```
+```SQL
 TABLE DICT_ZI(ZI TEXT, YIN TEXT)
 TABLE DICT_CI(FAN TEXT, JIAN TEXT, YIN TEXT, YI TEXT)
 ```
